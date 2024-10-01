@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2</title>
+    <script src="activitat2.js"></script>
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 20px;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: block;
+    width: 300px;
+    text-align: left;
+    position: relative;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #f0f0f0;
+}
+
+button:before {
+    content: "\27A1";
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+button:hover:before {
+    transform: translateX(10px);
+}
+
+.solucions {
+    margin: 20px;
+    padding: 15px 30px;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    display: block;
+    width: 300px;
+    text-align: left;
+}
+
+
+</style>
+<body>
+
+    <div class="container">
+
+    <button onclick="desestrocturacio()">Exercici1
+        <p>Se't proporciona un objecte amb la informació d'un estudiant. Desestructura l'objecte per obtenir el nom, edat i notes de l'estudiant. A continuació, imprimeix aquestes dades utilitzant una plantilla literal.</p>
+    </button>
+
+    <p class="solucions" id="solucion1"></p>
+
+    <button onclick="desestrocturacioarrays()">Exercici2
+        <p>Se't proporciona un array amb els valors de diverses coordenades. Utilitza la desestructuració d'arrays per extreure les coordenades x, y, i z.</p>
+    </button>
+    <p class="solucions" id="solucion2"></p>
+
+
+
+    </div>
+    
+</body>
+</html>
