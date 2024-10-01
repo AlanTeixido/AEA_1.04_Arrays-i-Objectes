@@ -68,3 +68,15 @@ function crearobjecteproducte(){
     document.getElementById("solucion6").textContent = `El producte és: ${producte.nom}, el preu és: ${producte.preu} i la quantitat és: ${producte.quantitat}`;
     
 }
+
+//Exercici 7
+const cotxe = {
+    marca: 'Tesla',
+    model: 'Model S',
+    preu: 80000
+};
+
+function novaPropietat(){
+    cotxe.any = 2021;
+    document.getElementById("solucion7").textContent = `El cotxe és de la marca ${cotxe.marca}, model ${cotxe.model}, preu ${cotxe.preu} i any ${cotxe.any}`;
+}
